@@ -1,0 +1,16 @@
+class Usuario:
+    def __init__(self, nombre, edad):
+        self.nombre = nombre
+        self.edad = edad
+        
+    def muestra_datos(self):
+        print("El nombre de usuario es: " + self.nombre, self.edad)
+        
+usuario1 = Usuario("Julian", 56)
+usuario1.muestra_datos()
+
+
+
+
+usuario1.edad = 65
+usuario1.muestra_datos()
