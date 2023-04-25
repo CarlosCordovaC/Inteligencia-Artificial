@@ -15,7 +15,7 @@ def dibujar_grafo(grafo, aristas_seleccionadas, color_aristas):
     nx.draw_networkx_nodes(grafo, pos, node_size=500, node_color='lightblue', alpha=0.9)
 
     # Dibujar las aristas del grafo
-    nx.draw_networkx_edges(grafo, pos, alpha=0.7, edge_color='black', width=2)
+    nx.draw_networkx_edges(grafo, pos, alpha=0.7, edge_color='black', width=1)
 
     # Dibujar las aristas seleccionadas en rojo
     nx.draw_networkx_edges(grafo, pos, edgelist=aristas_seleccionadas, edge_color=color_aristas, width=2)
